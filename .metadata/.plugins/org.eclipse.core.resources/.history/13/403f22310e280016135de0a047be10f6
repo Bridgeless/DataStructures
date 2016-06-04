@@ -1,0 +1,20 @@
+package com.griffith.linkedlist;
+
+public class App {
+
+	public static SinglyLinkedList testList;
+	
+	public static void main(String[] args) {
+		
+		testList = new SinglyLinkedList();
+		testList.add(0);
+		testList.add(1);
+		testList.add(2);
+		testList.add(3);
+		testList.add(4);
+		testList.add(5);
+		
+		System.out.println(testList);
+	}
+
+}

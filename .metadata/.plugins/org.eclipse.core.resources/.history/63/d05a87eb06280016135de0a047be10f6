@@ -1,0 +1,18 @@
+package com.griffith.linkedlist;
+
+public class SinglyLinkedList {
+	private static int counter;
+	private Node head;
+	
+	public SinglyLinkedList(){}
+	
+	
+	
+	private class Node{
+	{
+		Node next;
+		
+		Object data;
+	}
+	}
+}

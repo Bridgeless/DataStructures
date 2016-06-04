@@ -1,0 +1,32 @@
+package com.griffith.section1;
+
+public class DupCharRemover {
+
+	public String remove(String inputStr)
+	{
+		StringBuilder outputStr = new StringBuilder();
+		for(int i = 0; i < inputStr.length(); i++)
+		{
+			char curChar = inputStr.charAt(i);
+			int charTrack = 0;
+//			System.out.println("Outer: " + inputStr.charAt(i));
+			for(int x = 0; x < inputStr.length(); x++)
+			{
+				System.out.println("Outer: " + inputStr.charAt(i) + "| Inner: " + inputStr.charAt(x) + "| charTrack: " + charTrack);
+				if(curChar == inputStr.charAt(x) && charTrack < 1)
+				{
+					outputStr.append(curChar);
+					charTrack++;
+					System.out.println("TRUE adding: " + outputStr.toString());
+				}
+				else
+				{
+					outputStr = outputStr;
+					System.out.println("FALSE " + outputStr.toString());
+				}
+//				System.out.println("outer: " + curChar + "| inner: " + inputStr.charAt(x) + "| charTrack: " + charTrack);
+			}
+		}
+		return outputStr.toString();
+	}
+}

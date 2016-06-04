@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.griffith.arraylist.ArrayListBuilder"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="com.griffith.section1.StringReverser"/>
+<fullyQualifiedTypeName name="com.griffith.section1.ReverseString"/>
+<fullyQualifiedTypeName name="com.griffith.section1.DupCharRemover"/>
+<fullyQualifiedTypeName name="com.griffith.linkedlist.SinglyLinkedList"/>
+</qualifiedTypeNameHistroy>

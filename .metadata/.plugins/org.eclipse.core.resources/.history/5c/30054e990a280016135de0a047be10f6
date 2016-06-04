@@ -1,0 +1,74 @@
+package com.griffith.linkedlist;
+
+public class SinglyLinkedList {
+	private static int counter;
+	private Node head;
+
+	public SinglyLinkedList() {
+	}
+
+	// Appends the passed data to the end of the list
+	public void add(Object data) {
+		if (head == null) {
+			head = new Node(data);
+		}
+
+		Node tempNode = new Node(data);
+		Node currentNode = head;
+
+		if (currentNode != null) {
+			while (currentNode.getNext() != null) {
+				currentNode = currentNode.getNext();
+			}
+			currentNode.setNext(tempNode);
+		}
+		incrementCounter();
+	}
+	
+	public int getCounter()
+	{
+		return counter;
+	}
+	
+	public void incrementCounter()
+	{
+		counter++;
+	}
+
+	private class Node {
+		// The reference to the next node
+		Node next;
+		// The data in the current node
+		Object data;
+
+		public Node(Object dataValue) {
+			next = null;
+			data = dataValue;
+		}
+
+		// Alternative constructor to use in case we want to set the nodes next
+		// value
+		@SuppressWarnings("unused")
+		public Node(Object dataValue, Node nextValue) {
+			data = dataValue;
+			next = nextValue;
+		}
+
+		public Object getData() {
+			return data;
+		}
+
+		@SuppressWarnings("unused")
+		public void setData(Object dataValue) {
+			data = dataValue;
+		}
+
+		public Node getNext() {
+			return next;
+		}
+
+		public void setNext(Node nextValue) {
+			next = nextValue;
+		}
+	}
+}

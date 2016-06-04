@@ -1,0 +1,11 @@
+package com.griffith.section1;
+
+public class DupChar {
+
+	
+	public static void main(String[] args)
+	{
+		DupCharRemover test = new DupCharRemover();
+		test.remove("tessst")
+	}
+}

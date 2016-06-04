@@ -1,0 +1,13 @@
+package com.griffith.linkedlist;
+
+public class App {
+
+	public static SinglyLinkedList testList;
+	
+	public static void main(String[] args) {
+		
+		testList = new SinglyLinkedList();
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.griffith.section1;
+
+public class DupCharRemover {
+
+	public String remove(String inputStr)
+	{
+		StringBuilder outputStr = new StringBuilder();
+		for(int i = 0; i < inputStr.length(); i++)
+		{
+			char curChar = inputStr.charAt(i);
+			for(int x = 0; x < inputStr.length(); x++)
+			{
+				if(inputStr.charAt(x) == curChar)
+				{
+					outputStr = outputStr;
+				}
+				else
+				{
+					outputStr.append(i);
+				}
+			}
+		}
+		return outputStr.toString();
+	}
+}
