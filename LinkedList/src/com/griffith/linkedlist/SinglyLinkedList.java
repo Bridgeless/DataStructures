@@ -87,6 +87,7 @@ public class SinglyLinkedList<E> {
 		}
 		Node<E> node = getNode(index - 1);
 		Node<E> temp = node.next;
+//		System.out.println(node.data + " || " + temp.data);
 		if (index == 0) {
 			if (head != null) {
 				head = head.next;
@@ -94,7 +95,9 @@ public class SinglyLinkedList<E> {
 			if (temp != null) {
 				size--;
 				return temp.data;
-			} else {
+			} 
+			else {
+				size--;
 				return null;
 			}
 		} 
